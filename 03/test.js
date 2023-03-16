@@ -58,16 +58,24 @@
 // test();
 // console.log(age);
 
-var name = "global";
-function test() {
-  console.log(name);
-  var name = "local";
-  console.log(name);
-}
-test();
+// var name = "global";
+// function test() {
+//   console.log(name);
+//   var name = "local";
+//   console.log(name);
+// }
+// test();
 
-//함수또한
-test2();
-function test2() {
-  console.log("test");
+// //함수또한
+// test2();
+// function test2() {
+//   console.log("test");
+// }
+
+let value = undefined;
+let count = 0;
+while (value !== null) {
+  value = window.prompt();
+  count += value * 1;
 }
+console.log(count);
