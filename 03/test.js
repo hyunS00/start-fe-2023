@@ -72,10 +72,66 @@
 //   console.log("test");
 // }
 
-let value = undefined;
-let count = 0;
+//q1
+//var count = [10,20,30,40,50,60,70,100];  배열 count 요소들의 평균값 구하는 코드를 작성하세요
+// var count = [10, 20, 30, 40, 50, 60, 70, 100];
+// var sum = 0;
+// var average = 0;
+// count.forEach((value) => {
+//   sum += value;
+// });
+// average = sum / count.length;
+// console.log(average);
+
+//q2
+//구구단을 출력하는 코드를 for구문을 사용하여 작성하세요
+// for (i = 1; i < 10; i++) {
+//   for (j = 1; j < 10; j++) {
+//     console.log(`${i} * ${j} = ${i * j}`);
+//   }
+// }
+
+//q3
+//위에서 만든 구구단코드를 함수로 작성하세요
+// function multiplication(start, stop) {
+//   if (start <= 0) start = 1;
+
+//   for (i = start; i <= stop; i++) {
+//     for (j = 1; j < 10; j++) {
+//       console.log(`${i} * ${j} = ${i * j}`);
+//     }
+//   }
+// }
+// multiplication(1, 9);
+
+//q4
+//메소드가 포함된 객체를 생성하세요
+// const gugudanPerson = {
+//   personName: "hyunsoo",
+//   age: 25,
+//   changeName(name) {
+//     this.personName = name;
+//   },
+//   glowOld() {
+//     ++this.age;
+//   },
+//   speakGugudan(start, stop) {
+//     if (start <= 0) start = 1;
+
+//     for (i = start; i <= stop; i++) {
+//       for (j = 1; j < 10; j++) {
+//         console.log(`${i} * ${j} = ${i * j}`);
+//       }
+//     }
+//   },
+// };
+
+let value = "";
+let sum = 0;
 while (value !== null) {
   value = window.prompt();
-  count += value * 1;
+  if (!isNaN(value * 1)) {
+    sum += value * 1;
+  }
 }
-console.log(count);
+window.confirm(`숫자의 합은 ${sum}입니다.`);
