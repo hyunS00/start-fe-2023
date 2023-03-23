@@ -159,7 +159,7 @@ let joinArr = items.join(",");
 let re = joinArr.split("").map((e, i) => {
   console.log((i + 1) % (pageSize * 2) === 0, i);
   if ((i + 1) % (pageSize * 2) === 0) {
-    return "-";
+    return "---";
   }
   return e;
 });
