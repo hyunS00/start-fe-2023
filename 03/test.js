@@ -106,25 +106,27 @@
 
 //q4
 //메소드가 포함된 객체를 생성하세요
-// const gugudanPerson = {
-//   personName: "hyunsoo",
-//   age: 25,
-//   changeName(name) {
-//     this.personName = name;
-//   },
-//   glowOld() {
-//     ++this.age;
-//   },
-//   speakGugudan(start, stop) {
-//     if (start <= 0) start = 1;
+/*
+const gugudanPerson = {
+  personName: "hyunsoo",
+  age: 25,
+  changeName(name) {
+    this.personName = name;
+  },
+  glowOld() {
+    ++this.age;
+  },
+  speakGugudan(start, stop) {
+    if (start <= 0) start = 1;
 
-//     for (i = start; i <= stop; i++) {
-//       for (j = 1; j < 10; j++) {
-//         console.log(`${i} * ${j} = ${i * j}`);
-//       }
-//     }
-//   },
-// };
+    for (i = start; i <= stop; i++) {
+      for (j = 1; j < 10; j++) {
+        console.log(`${i} * ${j} = ${i * j}`);
+      }
+    }
+  },
+};
+*/
 
 let value = "";
 let sum = 0;
