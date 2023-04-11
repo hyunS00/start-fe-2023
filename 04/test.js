@@ -148,6 +148,7 @@ console.log(resultArr);
 // 출력: [1,'a',true]
 */
 
+/*
 // 11.배열값 나누기
 const items = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
 const pageSize = 3;
@@ -166,3 +167,43 @@ let re = joinArr.split("").map((e, i) => {
 console.log(re.join(""));
 
 // 출력: a,b,c---d,e,f---g,h,i---j
+
+*/
+/*
+//12. 배열값 나눠서 다시 배열로
+const items = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+const pageSize = 3;
+
+const result = [];
+let arr = [];
+items.forEach((value, index) => {
+  if ((index + 1) % 3 === 0) {
+    arr.push(value);
+    result.push(arr);
+    arr = [];
+  } else {
+    arr.push(value);
+  }
+});
+result.push(arr);
+console.log(result);
+// quiz
+// pageSize에 따라 배열값 분리해서 출력
+
+// 출력: [ [a,b,c], [d,e,f], [g,h,i], [j] ]
+
+*/
+//13. 페이지의 시작번호 구하기
+const items = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+const pageSize = 3;
+
+const getStartIndexByPage = function (page) {
+  // quiz
+  const startIndexByPage = pageSize * (page - 1);
+  console.log(startIndexByPage);
+};
+
+// 출력
+getStartIndexByPage(1); // 0
+getStartIndexByPage(2); // 3
+getStartIndexByPage(3); // 6
