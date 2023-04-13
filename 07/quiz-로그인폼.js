@@ -1,10 +1,18 @@
-const id = "hello";
-const pw = "world";
+const form = document.querySelector("form");
+const result = document.querySelector("#result");
 
-const $form = document.querySelector("#form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const id = form.elements.id.value;
+  const pw = form.elements.pw.value;
 
-const checkIdPw = (e) => {
-  console.log(e);
-};
-
-$form.addEventListener("onSubmit", checkIdPw);
+  if (id === pw) {
+    result.innerText = "success";
+    result.classList.add("success");
+    result.classList.remove("error");
+  } else {
+    result.innerText = "error";
+    result.classList.add("error");
+    result.classList.remove("success");
+  }
+});
